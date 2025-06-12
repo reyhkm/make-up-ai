@@ -1,0 +1,6 @@
+
+{
+  "name": "Penasihat Riasan AI",
+  "description": "Aplikasi berbasis AI yang menganalisis fitur wajah Anda dari foto yang diunggah dan merekomendasikan produk riasan yang sesuai menggunakan Gemini API.",
+  "requestFramePermissions": []
+}
