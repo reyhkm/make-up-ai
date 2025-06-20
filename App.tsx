@@ -103,7 +103,7 @@ const App: React.FC = () => {
             <div className="mt-8 text-center p-6 bg-purple-50 rounded-lg border border-purple-200">
               <h2 className="text-xl font-semibold text-purple-700 mb-2">Selamat Datang di Penasihat Riasan AI Lokal!</h2>
               <p className="text-gray-600">
-                Unggah foto wajah Anda, dan AI kami akan memberikan rekomendasi produk riasan dari merek lokal (Glad2Glow, Wardah, Madame Gie).
+                Unggah foto wajah Anda, dan AI kami akan memberikan rekomendasi produk riasan.
               </p>
               <p className="text-sm text-gray-500 mt-2">
                 Untuk hasil terbaik, gunakan foto dengan pencahayaan yang baik dan wajah terlihat jelas.
