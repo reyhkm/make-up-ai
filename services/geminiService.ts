@@ -50,8 +50,7 @@ export const analyzeImageWithGemini = async (
       contents: { parts: [imagePart, textPart] },
       config: {
         responseMimeType: "application/json", // Request JSON output
-        // Optional: Add other config like temperature, topK, topP if needed
-        // temperature: 0.7, 
+        topP: 0,
       },
     });
 
