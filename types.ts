@@ -8,9 +8,12 @@ export interface FacialAnalysis {
 }
 
 export interface MakeupProductRecommendation {
-  product_type: string;
-  recommendation: string;
-  details?: string;
+  product_type: string; // e.g., "Alas Bedak (Foundation)"
+  brand_name: string;   // e.g., "Wardah"
+  product_name: string; // e.g., "Lightening Liquid Foundation"
+  shade_name?: string;  // e.g., "02 Light Beige" (optional if not applicable)
+  reasoning: string;    // e.g., "Cocok untuk warna kulit Anda dan memberikan hasil akhir natural."
+  details?: string;     // Optional: Application tips or further details
 }
 
 export interface GeminiApiResponse {

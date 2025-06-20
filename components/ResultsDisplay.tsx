@@ -45,18 +45,22 @@ export const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ result }) => {
       <section aria-labelledby="makeup-recommendations-title" className="p-6 bg-pink-50 rounded-xl shadow-lg">
         <SectionTitle 
             id="makeup-recommendations-title"
-            title="Rekomendasi Riasan" 
+            title="Rekomendasi Riasan Produk Lokal" 
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
               </svg>
             }
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-          {makeup_recommendations.map((rec, index) => (
-            <ProductCard key={index} recommendation={rec} />
-          ))}
-        </div>
+        {makeup_recommendations && makeup_recommendations.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+            {makeup_recommendations.map((rec, index) => (
+                <ProductCard key={index} recommendation={rec} />
+            ))}
+            </div>
+        ) : (
+            <p className="text-gray-600 mt-4">Tidak ada rekomendasi spesifik yang dapat diberikan saat ini berdasarkan gambar yang diunggah dan kriteria produk.</p>
+        )}
       </section>
 
       {/* General Tips Section */}

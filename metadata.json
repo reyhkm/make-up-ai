@@ -1,6 +1,7 @@
 
 {
-  "name": "Penasihat Riasan AI",
-  "description": "Aplikasi berbasis AI yang menganalisis fitur wajah Anda dari foto yang diunggah dan merekomendasikan produk riasan yang sesuai menggunakan Gemini API.",
-  "requestFramePermissions": []
+  "name": "Penasihat Riasan AI Lokal",
+  "description": "Aplikasi AI yang menganalisis fitur wajah Anda dari foto dan merekomendasikan produk riasan spesifik (alas bedak, eyeshadow, blush) dari merek lokal Indonesia: Glad2Glow, Wardah, dan Madame Gie.",
+  "requestFramePermissions": [],
+  "prompt": ""
 }

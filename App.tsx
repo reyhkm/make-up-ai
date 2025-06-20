@@ -79,6 +79,7 @@ const App: React.FC = () => {
                 onClick={handleAnalyze}
                 disabled={appState === AppState.ANALYZING || !selectedFile}
                 className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75 transition-all duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                aria-label={appState === AppState.ANALYZING ? 'Sedang menganalisis gambar' : 'Dapatkan Saran Riasan dari gambar yang diunggah'}
               >
                 {appState === AppState.ANALYZING ? 'Menganalisis...' : 'Dapatkan Saran Riasan'}
               </button>
@@ -100,9 +101,9 @@ const App: React.FC = () => {
 
           {!selectedFile && appState === AppState.IDLE && (
             <div className="mt-8 text-center p-6 bg-purple-50 rounded-lg border border-purple-200">
-              <h2 className="text-xl font-semibold text-purple-700 mb-2">Selamat Datang di Penasihat Riasan AI!</h2>
+              <h2 className="text-xl font-semibold text-purple-700 mb-2">Selamat Datang di Penasihat Riasan AI Lokal!</h2>
               <p className="text-gray-600">
-                Unggah foto wajah Anda yang jelas, dan AI kami akan memberikan rekomendasi riasan yang dipersonalisasi.
+                Unggah foto wajah Anda, dan AI kami akan memberikan rekomendasi produk riasan dari merek lokal (Glad2Glow, Wardah, Madame Gie).
               </p>
               <p className="text-sm text-gray-500 mt-2">
                 Untuk hasil terbaik, gunakan foto dengan pencahayaan yang baik dan wajah terlihat jelas.
