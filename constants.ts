@@ -1,5 +1,5 @@
 
-export const GEMINI_MODEL_NAME = 'gemini-2.5-flash-preview-04-17';
+export const GEMINI_MODEL_NAME = 'gemini-2.5-flash';
 
 export const INITIAL_PROMPT = `
 Anda adalah seorang ahli penasihat riasan virtual yang berspesialisasi pada merek-merek makeup lokal Indonesia, khususnya Glad2Glow, Wardah, dan Madame Gie.
